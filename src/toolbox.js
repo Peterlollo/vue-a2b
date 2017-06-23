@@ -16,6 +16,7 @@ function getCandidates (variations) {
 
   variations.forEach(v => {
     if (v.data && v.data.slot) {
+      console.log('v.data>>>>>>>>>>>>>>>>>>', v.data)
       const chance = parseInt(v.data.attrs.chance) || equalChance
       names.push(v.data.slot)
       chances.push(chance)
